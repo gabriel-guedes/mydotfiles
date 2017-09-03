@@ -171,6 +171,13 @@ bar {
 #Wallpaper
 exec_always feh --bg-scale /home/gabriel/Pictures/wallpaper.jpg
 
+#Set keyboard layout to colemak
+exec setxkbmap us -variant colemak
+#turn capslock on/off when pressing both shifts
+exec setxkbmap -option shift:both_capslock
+#enable capslock autorepeat (actual backspace)
+exec xset r 66
+
 #Volume Icon
 #exec --no-startup-id volumeicon
 
